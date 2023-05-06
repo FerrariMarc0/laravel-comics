@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+
+        $magazines = config('db.magazines');
+        $menu = config('db.menu');
+        $commerce_icons = config('db.commerce_icons');
+    return view('home', compact('magazines', 'menu', 'commerce_icons'));
+})->name('homepage');
+
+
+Route::get('/prodotto', function () {
+
+        $menu = config('db.menu');
+    return view('product', compact('menu'));
+})->name('product');
