@@ -15,15 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-        $magazines = config('db.magazines');
-        $menu = config('db.menu');
-        $commerce_icons = config('db.commerce_icons');
-    return view('home', compact('magazines', 'menu', 'commerce_icons'));
+    $magazines = config('db.magazines');
+    $menu = config('db.menu');
+    $commerce_icons = config('db.commerce_icons');
+    $dc_comics = config('db.dc_comics');
+
+    return view('home', compact('magazines', 'menu', 'commerce_icons', 'dc_comics'));
 })->name('homepage');
 
 
 Route::get('/prodotto', function () {
 
         $menu = config('db.menu');
-    return view('product', compact('menu'));
+        $dc_comics = config('db.dc_comics');
+
+    return view('product', compact('menu', 'dc_comics'));
 })->name('product');

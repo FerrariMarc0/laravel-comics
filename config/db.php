@@ -14,6 +14,7 @@ return [
         'News',
         'Shop'
     ],
+
     'commerce_icons' => [
         [
             "text" => "Digital Comics",
@@ -36,6 +37,7 @@ return [
             "thumb" => "resources/img/buy-dc-power-visa.svg"
         ]
     ],
+
     'footer_icons' => [
         'resources/img/footer-facebook.png',
         'resources/img/footer-twitter.png',
@@ -43,6 +45,47 @@ return [
         'resources/img/footer-pinterest.png',
         'resources/img/footer-periscope.png'
     ],
+
+    "dc_comics" => [
+        "Characters",
+        "Comics",
+        "Movies",
+        "TV",
+        "Games",
+        "Videos",
+        "News"
+    ],
+
+    /* 'footer_links' => [
+        [
+            "title" => ,
+            "text" =>
+        ],
+        [
+            "title" => "Shop",
+            "text" => "Shop DC", "Shop DC Collectibles"
+        ],
+        [
+            "title" => "DC",
+            "text" =>
+                "Terms Of Use",
+                "Privacy Policy (New)",
+                "Ad Choices",
+                "Advertising",
+                "Jobs",
+                "Subscriptions",
+                "Talent Workshops",
+                "CPSC Certificates",
+                "Ratings",
+                "Shop Help",
+                "Contact Us"
+        ],
+        [
+            "title" => "Sites",
+            "text" => "Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"
+        ],
+    ], */
+
     'magazines' => [
     [
         "title" => "Action Comics #1000: The Deluxe Edition",
