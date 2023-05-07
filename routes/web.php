@@ -19,15 +19,28 @@ Route::get('/', function () {
     $menu = config('db.menu');
     $commerce_icons = config('db.commerce_icons');
     $dc_comics = config('db.dc_comics');
+    $shop = config('db.shop');
+    $dc = config('db.dc');
+    $sites = config('db.sites');
 
-    return view('home', compact('magazines', 'menu', 'commerce_icons', 'dc_comics'));
+    return view('home', compact('magazines', 'menu', 'commerce_icons', 'dc_comics', 'shop', 'dc', 'sites'));
 })->name('homepage');
 
 
-Route::get('/prodotto', function () {
+Route::get('/prodotto/{index}', function ($index) {
 
-        $menu = config('db.menu');
-        $dc_comics = config('db.dc_comics');
+    $total_magazines = config('db.magazines');
+    $menu = config('db.menu');
+    $dc_comics = config('db.dc_comics');
+    $shop = config('db.shop');
+    $dc = config('db.shop');
+    $sites = config('db.sites');
 
-    return view('product', compact('menu', 'dc_comics'));
-})->name('product');
+    if($index > count($total_magazines) -1){
+        abort(404);
+    }
+
+    $magazines = $total_magazines[$index];
+
+    return view('product', compact('menu', 'dc_comics', 'shop', 'dc', 'sites', 'magazines'));
+})->name('product')->where('index', '[0-9]+');

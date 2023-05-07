@@ -1,0 +1,14 @@
+#product_top{
+    height: 100px;
+    position: relative;
+        #product_top_card{
+            height: 200px;
+            width: 150px;
+            position: absolute;
+            bottom: 2.5rem;
+            left: 20%;
+        }
+}
+#product_info{
+    padding: 50px 500px;
+}

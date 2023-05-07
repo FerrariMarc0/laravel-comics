@@ -56,35 +56,32 @@ return [
         "News"
     ],
 
-    /* 'footer_links' => [
-        [
-            "title" => ,
-            "text" =>
-        ],
-        [
-            "title" => "Shop",
-            "text" => "Shop DC", "Shop DC Collectibles"
-        ],
-        [
-            "title" => "DC",
-            "text" =>
-                "Terms Of Use",
-                "Privacy Policy (New)",
-                "Ad Choices",
-                "Advertising",
-                "Jobs",
-                "Subscriptions",
-                "Talent Workshops",
-                "CPSC Certificates",
-                "Ratings",
-                "Shop Help",
-                "Contact Us"
-        ],
-        [
-            "title" => "Sites",
-            "text" => "Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"
-        ],
-    ], */
+    "shop" => [
+        "Shop DC",
+        "Shop DC collectibles"
+    ],
+
+    "dc" => [
+        "Terms Of Use",
+        "Privacy policy(New)",
+        "Ad Choises",
+        "Advertising",
+        "Jobs",
+        "Subscriptions",
+        "Talent Workshops",
+        "CPSC Certificates",
+        "Ratings",
+        "Shop Help",
+        "Contact Us"
+    ],
+
+    "sites" => [
+        "DC",
+        "MAD Magazine",
+        "DC Kids",
+        "DC Universe",
+        "DC Power Visa"
+    ],
 
     'magazines' => [
     [

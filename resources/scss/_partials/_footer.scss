@@ -1,3 +1,32 @@
-#footer_list{
-    padding-left: 18.75rem;
+footer{
+        #footer_list{
+            padding-left: 18.75rem;
+            margin-right: 12.5rem;
+            height: 6.25rem;
+        }
+
+        h3{
+            padding-left: 1.860rem;
+            margin-bottom: 1.875rem;
+        }
+
+        #footer_top{
+            position: relative;
+            background-image: url('../img/footer-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #footer_bottom{
+            background-color: #303030;
+                #footer_icons{
+                    background-color: aqua;
+                    height: 2.1875rem;
+                    width: 2.1875rem;
+                    border-radius: 50%;
+                }
+        }
 }
+
+
+
+

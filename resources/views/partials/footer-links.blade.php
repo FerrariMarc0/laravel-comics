@@ -1,1 +1,1 @@
-<ul><li>{{ $link }}</li></ul>
+<ul><li class="list-unstyled text-light">{{ $link }}</li></ul>
