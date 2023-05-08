@@ -35,6 +35,7 @@ Route::get('/prodotto/{index}', function ($index) {
     $shop = config('db.shop');
     $dc = config('db.shop');
     $sites = config('db.sites');
+    $footer_icons = config('db.footer_icons');
 
     if($index > count($total_magazines) -1){
         abort(404);
@@ -42,5 +43,5 @@ Route::get('/prodotto/{index}', function ($index) {
 
     $magazines = $total_magazines[$index];
 
-    return view('product', compact('menu', 'dc_comics', 'shop', 'dc', 'sites', 'magazines'));
+    return view('product', compact('menu', 'dc_comics', 'shop', 'dc', 'sites', 'magazines', 'footer_icons'));
 })->name('product')->where('index', '[0-9]+');
