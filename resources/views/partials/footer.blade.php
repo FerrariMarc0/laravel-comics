@@ -34,7 +34,10 @@
             <div class="py-4"><button class="p-2 bg-transparent border-primary text-light text-uppercase">Sign-up now!</button></div>
             <div class="d-flex align-items-center gap-3">
                 <h5 class="text-primary text-uppercase me-3">Follow us</h5>
-                <div id="footer_icons"></div>
+                @foreach ($footer_icons as $item)
+                    <div id="footer_icons"><a href=""><img src="{{ Vite::asset($item)}}" alt="#"></a></div>
+                @endforeach
+
             </div>
         </div>
     </section>

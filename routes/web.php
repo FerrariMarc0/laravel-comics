@@ -22,8 +22,8 @@ Route::get('/', function () {
     $shop = config('db.shop');
     $dc = config('db.dc');
     $sites = config('db.sites');
-
-    return view('home', compact('magazines', 'menu', 'commerce_icons', 'dc_comics', 'shop', 'dc', 'sites'));
+    $footer_icons = config('db.footer_icons');
+    return view('home', compact('magazines', 'menu', 'commerce_icons', 'dc_comics', 'shop', 'dc', 'sites', 'footer_icons'));
 })->name('homepage');
 
 
